@@ -10,6 +10,10 @@ cd opt
 mkdir cross
 cd ..
 
+tar --zstd -xvf binutils-2.44.tar.zst
+tar xf gcc-15.1.0.tar.xz
+rm *.tar.*
+
 cd src
 mkdir build-binutils
 cd build-binutils
