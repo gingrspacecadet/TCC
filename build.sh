@@ -4,7 +4,9 @@ TARGET=i686-elf
 PATH="$PREFIX/bin:$PATH"
 
 tar --zstd -xvf binutils-2.44.tar.zst
+mv binutils-2.44 $HOME/src
 tar xf gcc-15.1.0.tar.xz
+mv gcc-15.1.0 $HOME/src
 rm *.tar.*
 
 cd $HOME/src
